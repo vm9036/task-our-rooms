@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+    max-width: 2000px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background: #75664f;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.our_room_content h2{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.our_room_content{
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 26%;
+    gap: 10px;
+    color: white;
+}
+
+.our_room_content p{
+    width: 52%;
+    text-align: justify;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* room */
+
+.room_cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.room_img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.room_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.room_content .room_heading h3{
+    color: white;
+}
+
+.room_content button{
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}   
+
+/* featured facilities starts*/
+
+.featured_facilities_heading h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #ff4f00;
+    font-size: 40px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.box{
+    border: 1px solid white;
+    border-bottom: 0px;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.box_content{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    background-color: #ff4f00;
+    border: 1px solid white;
+    border-top: 0px;
+    font-size: 18px;
+}
+
+/* featured facilities starts*/
+
+/* btn */
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn button{
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #ff4f00;
+    color: #ff4f00;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media query for mobile */
